@@ -23,7 +23,7 @@ Config parameters :
 	- user : (string - optional) - (default: 'user') - Set the user credential.
 	- pass : (string - optional) - (default: 'pass') - Set the password credential.
 	- host : (string - optional) - (default: '127.0.0.1') - The host you want to connect with.
-	- port : (integer - optional) - (default: 6968) - Set the port on which perform the RPC command.
+	- port : (integer - optional) - (default: 7170) - Set the port on which perform the RPC command.
 
 Promise vs callback based
 
@@ -37,10 +37,10 @@ Config:
 ```javascript
 var config = {
     protocol: 'http',
-    user: 'dash',
+    user: 'raiden',
     pass: 'local321',
     host: '127.0.0.1',
-    port: 16968
+    port: 17170
 };
 ```
 
@@ -118,10 +118,10 @@ You can dynamically access to the help of each method by doing
 const RpcClient = require('raidencashcore-rpc');
 var client = new RPCclient({
     protocol:'http',
-    user: 'dash',
+    user: 'raiden',
     pass: 'local321', 
     host: '127.0.0.1', 
-    port: 16968
+    port: 17170
 });
 
 var cb = function (err, data) {
@@ -137,7 +137,6 @@ client.help('getinfo',cb);
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/dash-std-template/issues/new) or submit PRs.
 
 ## License
 
